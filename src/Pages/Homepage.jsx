@@ -1,7 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import checkImagesLoaded from "../utils/checkImagesLoaded";
 
 function Homepage() {
+  const [hiddenLoading,setHiddenLoading]=useState(true)
   const zodiacAnimals = [
     "Rat",
     "Ox",
@@ -16,12 +18,28 @@ function Homepage() {
     "Dog",
     "Pig",
   ];
+  const images=["/images/testimage.jpg","/images/TablePic3Test.jpg","/images/testcny.jpg", "/images/testmarble.jpeg"]
   const currentYear = new Date().getFullYear();
   const zodiacYear = (currentYear - 2020) % 12;
   const zodiac = zodiacAnimals[zodiacYear < 0 ? zodiacYear + 12 : zodiacYear];
   const location = useLocation();
   const navigate = useNavigate();
   useEffect(() => {
+    // const start=()=>{
+    //   let loadedCount=0;
+    //   images.forEach((src)=>{
+    //     const img=new Image();
+    //     img.src=src;
+    //     img.onload=()=>{
+    //       loadedCount+=1;
+    //       if(loadedCount===images.length){
+    //         setHiddenLoading(false)
+    //       }
+    //     }
+    //   })
+    // }
+    // start()
+    checkImagesLoaded(images, setHiddenLoading)
     if (location.hash) {
       requestAnimationFrame(() => {
         const el = document.querySelector(location.hash);
@@ -32,8 +50,11 @@ function Homepage() {
     } else {
       window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     }
-  }, [location]);
 
+  }, [location]);
+  if(hiddenLoading){
+    return (<><div className="min-h-200 bg-beige"></div></>)
+  }else{
   return (
     <>
       <div className="min-h-200 bg-beige">
@@ -179,7 +200,7 @@ function Homepage() {
         </div>
       </div>
     </>
-  );
+  );}
 }
 
 export default Homepage;

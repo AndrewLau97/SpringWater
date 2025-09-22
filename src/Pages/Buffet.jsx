@@ -1,8 +1,17 @@
 import { useEffect, useState } from "react";
+import checkImagesLoaded from "../utils/checkImagesLoaded";
 
 const Buffet = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [hiddenLoading, setHiddenLoading] = useState(true);
+  const images = [
+    "/images/BuffetPage1.jpg",
+    "/images/BuffetPage2.jpg",
+    "/images/BuffetPage3.jpg",
+    "/images/BuffetPage4.jpg",
+  ];
   useEffect(() => {
+    checkImagesLoaded(images, setHiddenLoading);
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
@@ -12,44 +21,52 @@ const Buffet = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  if (isMobile) {
+  if (hiddenLoading) {
     return (
       <>
-        <div className="">
-          <div>
-            <img src="/images/BuffetPage1.jpg" alt="Buffet Menu Page 1" />
-          </div>
-          <div>
-            <img src="/images/BuffetPage2.jpg" alt="Buffet Menu Page 2" />
-          </div>
-          <div>
-            <img src="/images/BuffetPage3.jpg" alt="Buffet Menu Page 3" />
-          </div>
-          <div>
-            <img src="/images/BuffetPage4.jpg" alt="Buffet Menu Page 4" />
-          </div>
-        </div>
+        <div className="bg-beige min-h-200"></div>
       </>
     );
   } else {
-    return (
-      <>
-        <div className="bg-beige min-h-200 flex justify-center py-10 flex-wrap">
-          <div className="xl:w-150 w-200">
-            <img src="/images/BuffetPage1.jpg" alt="Buffet Menu Page 1" />
+    if (isMobile) {
+      return (
+        <>
+          <div className="">
+            <div>
+              <img src="/images/BuffetPage1.jpg" alt="Buffet Menu Page 1" />
+            </div>
+            <div>
+              <img src="/images/BuffetPage2.jpg" alt="Buffet Menu Page 2" />
+            </div>
+            <div>
+              <img src="/images/BuffetPage3.jpg" alt="Buffet Menu Page 3" />
+            </div>
+            <div>
+              <img src="/images/BuffetPage4.jpg" alt="Buffet Menu Page 4" />
+            </div>
           </div>
-          <div className="xl:w-150 w-200">
-            <img src="/images/BuffetPage2.jpg" alt="Buffet Menu Page 2" />
+        </>
+      );
+    } else {
+      return (
+        <>
+          <div className="bg-beige min-h-200 flex justify-center py-10 flex-wrap">
+            <div className="xl:w-150 w-200">
+              <img src="/images/BuffetPage1.jpg" alt="Buffet Menu Page 1" />
+            </div>
+            <div className="xl:w-150 w-200">
+              <img src="/images/BuffetPage2.jpg" alt="Buffet Menu Page 2" />
+            </div>
+            <div className="xl:w-150 w-200">
+              <img src="/images/BuffetPage3.jpg" alt="Buffet Menu Page 3" />
+            </div>
+            <div className="xl:w-150 w-200">
+              <img src="/images/BuffetPage4.jpg" alt="Buffet Menu Page 4" />
+            </div>
           </div>
-          <div className="xl:w-150 w-200">
-            <img src="/images/BuffetPage3.jpg" alt="Buffet Menu Page 3" />
-          </div>
-          <div className="xl:w-150 w-200">
-            <img src="/images/BuffetPage4.jpg" alt="Buffet Menu Page 4" />
-          </div>
-        </div>
-      </>
-    );
+        </>
+      );
+    }
   }
 };
 
