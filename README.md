@@ -1,12 +1,54 @@
-# React + Vite
+# Springwater Cantonese Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents  
 
-Currently, two official plugins are available:
+-[Overview](#overview)  
+-[Live Demo](#live-demo)  
+-[Features](#features)  
+-[Built With](#built-with)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+# Overview  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Springwater is a modern Chinese restaurant website designed to showcase our authentic cuisine, menu offerings, and dining experience. The site features:  
+
+Menu Display: Browse our dishes with descriptions and images.  
+
+Responsive Design: Optimized for desktop, tablet, and mobile.  
+
+Contact & Location: Find us quickly with integrated maps and contact info.  
+
+This project highlights clean design, smooth navigation, and a user-friendly interface to bring the restaurant experience online.  
+
+---
+
+## Live Demo  
+
+[View my website](https://springwater.netlify.app)  
+
+---
+
+## Features  
+
+- Downloadable Menus  
+- Integrated map
+
+---
+
+## Built With  
+
+
+- [React](https://reactjs.org/)  
+- [Tailwind CSS](https://tailwindcss.com/)  
+- [Vite](https://vitejs.dev/)  
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
+- [Framer Motion](https://motion.dev/)  
+- [Node v22.14.0](https://nodejs.org/en) 
+
+---
+
+
+©2025 Springwater Cantonese Restaurant
+
+
