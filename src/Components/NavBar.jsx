@@ -14,7 +14,7 @@ function NavBar() {
       <div className="lg:hidden flex justify-center">
         <button
           onClick={() => setShowNavBar(!showNavBar)}
-          className="p-2 mr-5"
+          className="p-2"
           aria-label="Open menu on mobile only"
           onBlur={(e) => {
             if (!e.relatedTarget) {

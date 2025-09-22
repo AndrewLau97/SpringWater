@@ -25,20 +25,6 @@ function Homepage() {
   const location = useLocation();
   const navigate = useNavigate();
   useEffect(() => {
-    // const start=()=>{
-    //   let loadedCount=0;
-    //   images.forEach((src)=>{
-    //     const img=new Image();
-    //     img.src=src;
-    //     img.onload=()=>{
-    //       loadedCount+=1;
-    //       if(loadedCount===images.length){
-    //         setHiddenLoading(false)
-    //       }
-    //     }
-    //   })
-    // }
-    // start()
     checkImagesLoaded(images, setHiddenLoading)
     if (location.hash) {
       requestAnimationFrame(() => {
@@ -85,7 +71,7 @@ function Homepage() {
         className="min-h-150 justify-between text-black bg-beige scroll-mt-25 flex w-full lg:flex-row flex-col"
         id="about"
       >
-        <div className=" lg:w-1/2 my-10 lg:mx-10 aspect-square flex items-center md:mx-40 sm:mx-20 mx-10">
+        <div className=" lg:w-1/2 py-10 lg:px-10 aspect-square flex items-center md:px-40 sm:px-20 px-10">
             <div>
               <img
                 src="/images/TablePic3Test.jpg"
@@ -188,15 +174,13 @@ function Homepage() {
             </p>
           </div>
         </div>
-        <div className=" lg:w-1/2 my-10 lg:mx-10 aspect-square flex items-center md:mx-40 sm:mx-20 mx-10">
-          
+        <div className=" lg:w-1/2 py-10 lg:px-10 aspect-square flex items-center md:px-40 sm:px-20 px-10">
             <div>
               <img
                 src="/images/testcny.jpg"
                 className="w-full h-full object-cover"
               />
             </div>
-          
         </div>
       </div>
     </>
