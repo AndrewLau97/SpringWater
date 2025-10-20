@@ -8,9 +8,9 @@ export default function PageWrapper({ children }) {
 
   return (
     <motion.div
-      // initial={{ opacity: 0 }}
-      // animate={{ opacity: 1, transition: { duration: 1.5 } }}
-      // exit={{ opacity: 0, transition: { duration: 0.7 } }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 1.5 } }}
+      exit={{ opacity: 0, transition: { duration: 0.7 } }}
     >
       {children}
     </motion.div>

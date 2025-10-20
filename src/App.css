@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+
 
 @theme {
   --font-georgia: "Georgia", sans-serif;
@@ -8,10 +11,17 @@
   --color-beige: #f5f5dc;
   --color-hoverbeige: #ededd1;
   --color-red: #8b2e2e;
+  --color-cnyred:#a11517;
   --color-green: rgba(0, 50, 0, 0.8);
+  --color-xmasgreen:#013220;
+  --color-fadedyellow:#FFFACD;
   --animate-fade-in-scale: fade-in-scale 1s ease-in;
   --animate-fade-out-scale: fade-out-scale 1s forwards;
   --breakpoint-md: 55rem;
+  --color-test:#275910;
+  --color-testgold:#E8C56A;
+  --font-alexbrush: "Alex Brush", cursive;
+  --font-alegreyasc: "Alegreya SC", serif;
 }
 
 @keyframes fade-in-scale {

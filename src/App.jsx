@@ -9,6 +9,9 @@ import PageWrapper from "./Components/PageWrapper";
 import Takeaway from "./Pages/Takeaway";
 import Buffet from "./Pages/Buffet";
 import ALaCarte from "./Pages/ALaCarte";
+import ChineseNewYear from "./Pages/ChineseNewYear";
+import Xmas from "./Pages/Xmas";
+import FAQ from "./Pages/FAQ";
 
 function App() {
   const location = useLocation();
@@ -21,7 +24,7 @@ function App() {
               path="/"
               element={
                 <PageWrapper>
-                  <Homepage />
+                  <Homepage/>
                 </PageWrapper>
               }
             />
@@ -34,10 +37,10 @@ function App() {
               }
             />
             <Route
-              path="/buffet"
+              path="/allyoucaneat"
               element={
                 <PageWrapper>
-                  <Buffet />
+                  <Buffet/>
                 </PageWrapper>
               }
             />
@@ -45,7 +48,7 @@ function App() {
               path="/alacarte"
               element={
                 <PageWrapper>
-                  <ALaCarte />
+                  <ALaCarte/>
                 </PageWrapper>
               }
             />
@@ -53,7 +56,39 @@ function App() {
                 path="/takeaway"
                 element={
                   <PageWrapper>
-                    <Takeaway />
+                    <Takeaway/>
+                  </PageWrapper>
+                }
+              />
+              <Route
+                path="/cny"
+                element={
+                  <PageWrapper>
+                    <ChineseNewYear/>
+                  </PageWrapper>
+                }
+              />
+              <Route
+                path="/xmas-nye"
+                element={
+                  <PageWrapper>
+                    <Xmas/>
+                  </PageWrapper>
+                }
+              />
+              <Route
+                path="/promotions"
+                element={
+                  <PageWrapper>
+                    <Xmas/>
+                  </PageWrapper>
+                }
+              />
+              <Route
+                path="/faq"
+                element={
+                  <PageWrapper>
+                    <FAQ/>
                   </PageWrapper>
                 }
               />
