@@ -13,7 +13,7 @@ const FAQ = () => {
         <div className="py-10">
           <div className="text-center pb-10">
             <h1 className="text-5xl font-georgia text-red py-5">
-              Springwater Cantonese Frequently Asked Questions
+              Frequently Asked Questions
             </h1>
           </div>
           <div className="md:w-2/3 md:mx-auto w-full px-5">

@@ -19,14 +19,16 @@ const menuInfo = [
       Yes! Our takeaway menu can be found on our{" "}
       <a href="/takeaway" className="text-blue-500 underline">
         website.
-      </a>
+      </a>{" "}
+      Takeaway orders are taken by phone or in person and are available for collection.
+We do not offer a delivery service.
     </p>,
     // `Yes! Our takeaway menu can also be found on our website. link here`
     "takeaway",
   ],
   [
     "Do you cater for allergies or special diets?",
-    "Absolutely - Please ask for our allergy guide available on site before ordering if you have an allergy or special dietary requirement. Our Staff can advise if you have any further questions.",
+    "Please ask for our allergy guide available on site before ordering if you have an allergy or special dietary requirement. Our Staff can advise if you have any further questions.",
     "allergy",
   ],
   [

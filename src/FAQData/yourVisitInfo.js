@@ -6,7 +6,7 @@ const yourVisitInfo = [
   ],
   [
     "Is there a dress code?",
-    "We encourage smart casual attire, as dining at Springwater Cantonese is a special experience. Many of our guests choose to dress up to celebrate memorable moments with family and friends.",
+    "We encourage smart casual attire since many of our guests are dressed to celebrate special occasions with friends and family.",
     "dressCode",
   ],
   [
@@ -14,6 +14,9 @@ const yourVisitInfo = [
     "Yes, the restaurant is on one level with disabled toilet facilities and has disabled access throughout.",
     "disableAccess",
   ],
+  ["Is there customer parking?", "There is a large car park on site available for customer use.", "parking"],
+  ["Can I bring children?","Yes, children are allowed. Please be aware servers are carrying trays of drinks and hot food and we respectfully request children are supervised and seated at all times. The restaurant no longer provides high chairs for younger children, please bring your own high chair or booster seat if your child requires one.", "children"],
+  ["Can I leave a tip or gratuity?","Tips and gratuities are greatly appreciated by the team. The bill does not include a service charge." ,"tips"],
 ];
 
 export default yourVisitInfo;

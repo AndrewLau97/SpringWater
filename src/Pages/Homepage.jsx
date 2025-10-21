@@ -212,7 +212,7 @@ function Homepage() {
           className="py-10 text-black flex w-full lg:flex-row flex-col font-georgia scroll-mt-25"
           id="privateEvents"
         >
-           <div className=" lg:w-1/2 py-10 lg:px-10 sm:px-20 px-10">
+          <div className=" lg:w-1/2 py-10 lg:px-10 sm:px-20 px-10">
             <div className="w-4/5 mx-auto">
               <EventSlider
                 images={[
@@ -231,12 +231,15 @@ function Homepage() {
           </div>
           <div className="xl:w-2/3 text-center lg:mx-auto mx-10 font-georgia lg:w-4/5 md:w-2/3 md:mx-auto flex items-center">
             <div className="text-center my-10 md:my-0 xl:mx-20 sm:mx-10 gap-5 flex flex-col">
-              <h1 className="text-3xl font-bold">
-                 Events 
-              </h1>
+              <h1 className="text-3xl font-bold">Events</h1>
 
               <p className="text-lg">
                 Have a special celebration coming up? Whether it's a birthday,
+                anniversary, corporate dinner, or just a get together with your
+                favourite people, the restaurant offers the perfect setting for
+                larger parties. With over 30 years experience, we can help you
+                plan that wonderful party or the perfect event!
+                {/* Have a special celebration coming up? Whether it's a birthday,
                 anniversary, corporate dinner, or just a reason to gather your
                 favourite people, we'd love to host your celebration! You can
                 reserve a section of our restaurant just for your group
@@ -245,11 +248,10 @@ function Homepage() {
                 Let's make your occasion truly unforgettable —{" "}
                 <span className="font-bold">
                   get in touch and we'll help you plan the perfect event!
-                </span>
+                </span> */}
               </p>
             </div>
           </div>
-         
         </div>
       </>
     );

@@ -25,7 +25,7 @@ const OtherFAQ = () => {
                   bgColour="hoverbeige"
                 />
               </div>
-              <div className="border-1 border-hoverbeige mb-2 rounded-sm">
+              {/* <div className="border-1 border-hoverbeige mb-2 rounded-sm">
                 <QuestionAndAnswer
                   question="Is there customer parking?"
                   answer={<p className="text-xs py-2">There is a large car park on site available for customer use.</p>}
@@ -34,7 +34,7 @@ const OtherFAQ = () => {
                   setState={setShowOther}
                   bgColour="hoverbeige"
                 />
-              </div>
+              </div> */}
               <div className="border-1 border-hoverbeige rounded-sm">
                 <QuestionAndAnswer
                   question="I have been banned from the restaurant"

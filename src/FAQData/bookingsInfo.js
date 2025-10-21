@@ -1,10 +1,5 @@
 const bookingInfo = [
   [
-    "Whats the best way to book a table?",
-    "Simply give us a call or drop by in person - we'll be happy to arrange it for you.",
-    "BookingsTaken",
-  ],
-  [
     "How can I make a booking?",
     "You can book a table by phone or in person at the restaurant.",
     "HowToBook",
@@ -31,12 +26,12 @@ const bookingInfo = [
   ],
   [
     "Do you take walk-ins?",
-    "We always do out best to welcome walk-ins, depending on table availability at the time.",
+    "We always do our best to welcome walk-ins, depending on table availability at the time.",
     "WalkIns",
   ],
   [
     "What if I need to cancel my booking?",
-    "If your plans change, please call us to cancel. We really appreiciate it as it allows us to offer the table to other guests.",
+    "If your plans change, please call us to cancel. We really appreciate it as it allows us to offer the table to other guests.",
     "CancelBooking",
   ],
 ];
