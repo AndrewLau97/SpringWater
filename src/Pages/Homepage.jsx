@@ -13,6 +13,10 @@ function Homepage() {
     "/images/XmasDeco.png",
     "/images/BalloonArch.png",
     "/images/BarTop.jpg",
+    "/images/TablePic.jpg",
+    "/images/MenuBlue.png",
+    "/images/MenuRed.png",
+    "/images/MenuGreen.png",
   ];
   const location = useLocation();
   const navigate = useNavigate();

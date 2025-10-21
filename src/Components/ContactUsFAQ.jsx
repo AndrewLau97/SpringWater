@@ -28,7 +28,7 @@ const ContactUsFAQ = () => {
                         You can find us at: <br />
                         <span className="font-bold">Springwater Cantonese</span>
                         <br />
-                        Moor Lane, Nottingham, NG14 6FW
+                        Moor Lane, Nottingham, NG14 6FZ
                       </p>
                     </div>
                   }

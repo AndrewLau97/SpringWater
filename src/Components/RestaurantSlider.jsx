@@ -6,8 +6,8 @@ const RestaurantSlider = () => {
     "/images/EntranceFrontPage.jpg",
     "/images/Entrance2FrontPage2.jpg",
     "/images/SignFrontPage2.jpg",
-    "/images/FountainFrontPage.jpg",
-    "/images/GardenFrontPage.jpg",
+    // "/images/FountainFrontPage.jpg",
+    // "/images/GardenFrontPage.jpg",
     '/images/TestMenuBG.jpg'
   ];
   return (
