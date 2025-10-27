@@ -6,7 +6,7 @@ const bookingInfo = [
   ],
   [
     "Can I book for a large group?",
-    "Of course! For larger groups, please call or visit us in person to reserve your table. We'll just need to know your group size and whether there are any children (with ages), as we do not provide high chairs. Please note that a non-refundable deposit of £5 per person will be required to secure the booking.",
+    "For larger groups, please call or visit us in person to reserve your table. We will need to know your group size and whether there are any children (with ages) as we no longer provide high chairs.",
     "LargeGroups",
   ],
   [
@@ -26,7 +26,7 @@ const bookingInfo = [
   ],
   [
     "Do you take walk-ins?",
-    "We always do our best to welcome walk-ins, depending on table availability at the time.",
+    "We will do our best to welcome walk-ins depending on table availablility at the time. However, we always recommend making a table reservation.",
     "WalkIns",
   ],
   [

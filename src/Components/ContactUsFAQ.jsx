@@ -20,13 +20,8 @@ const ContactUsFAQ = () => {
                   answer={
                     <div className="text-xs py-2">
                       <p>
-                        We're delighted to welcome you to our beautiful location
-                        — the perfect place to enjoy authentic Cantonese cuisine
-                        with family and friends.
-                      </p>
-                      <p>
                         You can find us at: <br />
-                        <span className="font-bold">Springwater Cantonese</span>
+                        <span className="font-bold"><a href="https://maps.app.goo.gl/z35c9ZSRMw2VLk7Z6" target="_blank">Springwater Cantonese</a></span>
                         <br />
                         Moor Lane, Nottingham, NG14 6FZ
                       </p>

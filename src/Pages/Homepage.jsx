@@ -47,8 +47,8 @@ function Homepage() {
         </div>
         <div className="font-georgia py-10  text-black">
           <p className="text-center py-5 text-3xl sm:mx-20 mx-5">
-            Your table is ready — Welcome to Nottingham's home of Cantonese
-            cuisine
+            Your Table is Ready — Welcome to Nottingham's home of Cantonese
+            Cuisine
           </p>
           <p className="sm:w-1/2 sm:mx-auto mb-5 text-center mx-5">
             A bright and welcoming space, Springwater Cantonese Restaurant
@@ -237,7 +237,7 @@ function Homepage() {
                 Have a special celebration coming up? Whether it's a birthday,
                 anniversary, corporate dinner, or just a get together with your
                 favourite people, the restaurant offers the perfect setting for
-                larger parties. With over 30 years experience, we can help you
+                larger parties. With over 30 years experience, let us help you
                 plan that wonderful party or the perfect event!
                 {/* Have a special celebration coming up? Whether it's a birthday,
                 anniversary, corporate dinner, or just a reason to gather your
