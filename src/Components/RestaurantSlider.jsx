@@ -4,7 +4,7 @@ import {Autoplay, Pagination } from "swiper/modules";
 const RestaurantSlider = () => {
   const images = [
     "/images/EntranceFrontPage.jpg",
-    "/images/Entrance2FrontPage2.jpg",
+    "/images/Entrance2FrontPage.jpg",
     "/images/SignFrontPage2.jpg",
     // "/images/FountainFrontPage.jpg",
     // "/images/GardenFrontPage.jpg",

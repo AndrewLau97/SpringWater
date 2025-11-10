@@ -27,6 +27,9 @@ This project highlights clean design, smooth navigation, and a user-friendly int
 
 [View my website](https://springwater.netlify.app)  
 
+🌐 Hosted on [Netlify](https://springwater.netlify.app)  
+Also available at [www.springwatercantonese.co.uk](https://www.springwatercantonese.co.uk)
+
 ---
 
 ## Features  

@@ -9,7 +9,7 @@ function Homepage() {
   const [hiddenLoading, setHiddenLoading] = useState(true);
   const images = [
     "/images/EntranceFrontPage.jpg",
-    "/images/Fountain.jpg",
+    "/images/Fountain.png",
     "/images/XmasDeco.png",
     "/images/BalloonArch.png",
     "/images/BarTop.jpg",
@@ -20,8 +20,21 @@ function Homepage() {
   ];
   const location = useLocation();
   const navigate = useNavigate();
-  useEffect(() => {
-    checkImagesLoaded(images, setHiddenLoading);
+  function preloadImages(urls) {
+  for (let url of urls) {
+    const img = new Image();
+    img.src = url;
+  }
+}
+const imageUrls = [
+  "/images/TablePic.jpg",
+    "/images/MenuBlue.png",
+    "/images/MenuRed.png",
+    "/images/MenuGreen.png",
+];
+useEffect(() => {
+  checkImagesLoaded(images, setHiddenLoading);
+  preloadImages(imageUrls);
     if (location.hash) {
       requestAnimationFrame(() => {
         const el = document.querySelector(location.hash);
@@ -69,16 +82,16 @@ function Homepage() {
           </div>
         </div>
         <div
-          className="min-h-150 justify-between text-black scroll-mt-35 flex w-full lg:flex-row flex-col"
+          className="min-h-150 text-black scroll-mt-35 flex w-full lg:flex-row flex-col"
           id="about"
         >
-          <div className="lg:w-1/2 py-10 lg:px-10 aspect-square flex items-center sm:px-20 px-10">
-            <div>
-              <img
-                src="/images/Fountain.jpg"
-                className="w-full h-full object-cover rounded-sm"
+          <div className="lg:w-1/2 py-10 lg:px-10 sm:px-20 px-10">
+          <EventSlider
+                images={[
+                  "/images/Fountain.png",
+                  "/images/Fountain2.png",
+                ]}
               />
-            </div>
           </div>
           <div className="lg:w-1/2 flex flex-col justify-center">
             <div className="xl:w-2/3 text-center lg:mx-auto mx-10 font-georgia lg:w-4/5 md:w-2/3 md:mx-auto">
@@ -217,14 +230,12 @@ function Homepage() {
               <EventSlider
                 images={[
                   "/images/BalloonArch.png",
-                  "/images/EventWedding.jpg",
                   "/images/TableEvent.jpg",
                   "/images/TableEvent2.jpg",
                   "/images/CakeFlower.jpg",
                   "/images/RedEnvelope.jpg",
-                  // "/images/EventWedding2.jpg",
-                  // "/images/EventWedding3.jpg",
-                  // "/images/EventWedding4.jpg",
+                  "/images/testingsquare.png",
+                  "/images/testingsquare2.png",
                 ]}
               />
             </div>
@@ -235,20 +246,9 @@ function Homepage() {
 
               <p className="text-lg">
                 Have a special celebration coming up? Whether it's a birthday,
-                anniversary, corporate dinner, or just a get together with your
-                favourite people, the restaurant offers the perfect setting for
+                anniversary, corporate dinner, or just a gathering with your favourite people, the restaurant offers the perfect setting for
                 larger parties. With over 30 years experience, let us help you
                 plan that wonderful party or the perfect event!
-                {/* Have a special celebration coming up? Whether it's a birthday,
-                anniversary, corporate dinner, or just a reason to gather your
-                favourite people, we'd love to host your celebration! You can
-                reserve a section of our restaurant just for your group
-                - the perfect setting for great food, good company, and lasting
-                memories. <br />
-                Let's make your occasion truly unforgettable —{" "}
-                <span className="font-bold">
-                  get in touch and we'll help you plan the perfect event!
-                </span> */}
               </p>
             </div>
           </div>

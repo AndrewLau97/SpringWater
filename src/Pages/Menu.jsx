@@ -11,9 +11,41 @@ function Menu() {
     "/images/MenuRed.png",
     "/images/MenuGreen.png",
   ];
-
+    function preloadImages(urls) {
+  for (let url of urls) {
+    const img = new Image();
+    img.src = url;
+  }
+}
+const imageUrls = [
+  "/images/ALaCartePage1.jpg",
+    "/images/ALaCartePage2.jpg",
+    "/images/ALaCartePage3.jpg",
+    "/images/ALaCartePage4.jpg",
+    "/images/ALaCartePage5.jpg",
+    "/images/ALaCartePage6.jpg",
+    "/images/ALaCartePage7.jpg",
+    "/images/ALaCartePage8.jpg",
+    "/images/ALaCartePage9.jpg",
+    "/images/AllYouCanEatPage1.jpg",
+    "/images/AllYouCanEatPage2.jpg",
+    "/images/AllYouCanEatPage3.jpg",
+    "/images/AllYouCanEatPage4.jpg",
+    "/images/TakeawayPage1.jpg",
+    "/images/TakeawayPage2.jpg",
+    "/images/TakeawayPage3.jpg",
+    "/images/TakeawayPage4.jpg",
+    "/images/TakeawayPage5.jpg",
+    "/images/TakeawayPage6.jpg",
+    "/images/TakeawayFullPage1.jpg",
+    "/images/TakeawayFullPage2.jpg",
+];
+// window.onload = () => {
+//   preloadImages(imageUrls);
+// };
   useEffect(() => {
     checkImagesLoaded(images, setHiddenLoading);
+     preloadImages(imageUrls);
   }, []);
   function seeMenu(menu) {
     navigate(menu);

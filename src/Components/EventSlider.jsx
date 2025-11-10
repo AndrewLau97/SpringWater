@@ -20,6 +20,7 @@ const EventSlider = ({images}) => {
         }}
         modules={[Autoplay,Pagination]}
         className="h-full w-full object-center object-cover rounded-sm"
+        
       >
         {images.map((image) => {
           return (
