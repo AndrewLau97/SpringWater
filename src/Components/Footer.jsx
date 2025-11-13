@@ -24,6 +24,7 @@ function Footer() {
                   <img
                     className="h-80 mb-5"
                     src="/images/GoldLogo.png"
+                    alt="Springwater Cantonese Restaurant's logo in gold"
                   />
                 </div>
                 <div className="flex justify-center">
@@ -75,10 +76,11 @@ function Footer() {
                 <img
                   className="h-50 px-10"
                   src="/images/GoldLogo.png"
+                  alt="Springwater Cantonese Restaurant's logo in gold"
                 />
               </div>
               <div className="border-r-1 px-10 border-l-1">
-                <h3 className="text-2xl mb-2">Opening Hours</h3>
+                <h1 className="text-2xl mb-2">Opening Hours</h1>
                 <ul>
                   <li className="text-sm">Monday: 5pm - 10:30pm</li>
                   <li className="text-sm">Tuesday: Closed</li>
@@ -90,7 +92,7 @@ function Footer() {
                 </ul>
               </div>
               <div className="px-10">
-                <h3 className="text-2xl mb-2">Book a table</h3>
+                <h1 className="text-2xl mb-2">Book a table</h1>
                 <p className="text-sm">Moor Lane, Calverton,</p>
                 <p className="text-sm">
                   Nottingham NG<span className="font-merriweather">14 6</span>FZ

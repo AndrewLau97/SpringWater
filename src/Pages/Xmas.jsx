@@ -42,7 +42,7 @@ const Xmas = () => {
         <div className="text-center text-testgold sm:py-5 xl:w-1/2 sm:w-2/3 mx-auto">
           <div className="sm:text-5xl text-3xl flex items-center flex justify-between py-5 h-30 md:h-40 mb-5">
             <div className="aspect-square h-full">
-              <img src="/images/xmastreereverse.png" className="h-full" />
+              <img src="/images/xmastreereverse.png" className="h-full" alt="Golden christmas tree"/>
             </div>
             <div className="">
               <h1 className="font-alexbrush text-[clamp(1.5rem,2vw+1rem,4rem)]">
@@ -50,7 +50,7 @@ const Xmas = () => {
               </h1>
             </div>
             <div className="aspect-square h-full flex justify-end">
-              <img src="/images/xmastree.png" className="h-full" />
+              <img src="/images/xmastree.png" className="h-full" alt="Golden christmas tree mirrored"/>
             </div>
           </div>
           <div className="flex md:text-4xl justify-center gap-5 text-2xl">

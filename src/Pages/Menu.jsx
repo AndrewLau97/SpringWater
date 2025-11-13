@@ -11,14 +11,14 @@ function Menu() {
     "/images/MenuRed.png",
     "/images/MenuGreen.png",
   ];
-    function preloadImages(urls) {
-  for (let url of urls) {
-    const img = new Image();
-    img.src = url;
+  function preloadImages(urls) {
+    for (let url of urls) {
+      const img = new Image();
+      img.src = url;
+    }
   }
-}
-const imageUrls = [
-  "/images/ALaCartePage1.jpg",
+  const imageUrls = [
+    "/images/ALaCartePage1.jpg",
     "/images/ALaCartePage2.jpg",
     "/images/ALaCartePage3.jpg",
     "/images/ALaCartePage4.jpg",
@@ -39,13 +39,13 @@ const imageUrls = [
     "/images/TakeawayPage6.jpg",
     "/images/TakeawayFullPage1.jpg",
     "/images/TakeawayFullPage2.jpg",
-];
-// window.onload = () => {
-//   preloadImages(imageUrls);
-// };
+  ];
+  // window.onload = () => {
+  //   preloadImages(imageUrls);
+  // };
   useEffect(() => {
     checkImagesLoaded(images, setHiddenLoading);
-     preloadImages(imageUrls);
+    preloadImages(imageUrls);
   }, []);
   function seeMenu(menu) {
     navigate(menu);
@@ -69,14 +69,15 @@ const imageUrls = [
             <img
               src="/images/MenuGreen.png"
               className="h-full w-full object-cover rounded-sm"
+              alt="All you can eat menu"
             />
             <div className="absolute inset-0 hover:bg-white/30 duration-1800"></div>
             <div className="absolute z-0 top-0 text-black drop-shadow-lg flex flex-col-reverse">
               {/* <div className="h-10 border-1"></div> */}
-              <p className="text-3xl group-hover:animate-fade-out-scale animate-fade-in-scale mb-2 text-3xl lg:text-2xl xl:text-3xl text-testgold">
+              <h1 className="text-3xl group-hover:animate-fade-out-scale animate-fade-in-scale mb-2 text-3xl lg:text-2xl xl:text-3xl text-testgold">
                 All You Can Eat
-              </p>
-              <p className="text-center underline group-hover:translate-y-10 duration-1000 group-hover:text-white group-hover:animate-fade-in-scale animate-fade-out-scale">
+              </h1>
+              <p className="text-center group-hover:translate-y-10 duration-1000 group-hover:text-white group-hover:animate-fade-in-scale animate-fade-out-scale">
                 View Menu
               </p>
             </div>
@@ -89,7 +90,7 @@ const imageUrls = [
                 e.stopPropagation();
               }}
             >
-              <img src="/images/DownloadIcon.png" className="w-full h-full"/>
+              <img src="/images/DownloadIcon.png" className="w-full h-full" alt="Menu download button"/>
             </a>
           </div>
           <div
@@ -101,14 +102,15 @@ const imageUrls = [
             <img
               src="/images/MenuBlue.png"
               className="h-full w-full object-cover rounded-sm"
+              alt="À La Carte menu"
             />
             <div className="absolute inset-0 hover:bg-white/30 duration-1000"></div>
             <div className="absolute z-0 top-0 text-black drop-shadow-lg flex flex-col-reverse">
               {/* <div className="h-10"></div> */}
-              <p className="text-3xl group-hover:animate-fade-out-scale animate-fade-in-scale mb-2 text-3xl lg:text-2xl xl:text-3xl text-testgold">
+              <h1 className="text-3xl group-hover:animate-fade-out-scale animate-fade-in-scale mb-2 text-3xl lg:text-2xl xl:text-3xl text-testgold">
                 À La Carte
-              </p>
-              <p className="text-center underline group-hover:translate-y-10 duration-1800 group-hover:text-white group-hover:animate-fade-in-scale animate-fade-out-scale">
+              </h1>
+              <p className="text-center group-hover:translate-y-10 duration-1800 group-hover:text-white group-hover:animate-fade-in-scale animate-fade-out-scale">
                 View Menu
               </p>
             </div>
@@ -121,7 +123,7 @@ const imageUrls = [
                 e.stopPropagation();
               }}
             >
-              <img src="/images/DownloadIcon.png" className="w-full h-full"/>
+              <img src="/images/DownloadIcon.png" className="w-full h-full" alt="Menu download button" />
             </a>
           </div>
           <div
@@ -133,14 +135,15 @@ const imageUrls = [
             <img
               src="/images/MenuRed.png"
               className="h-full w-full object-cover rounded-sm"
+              alt="Takeaway menu"
             />
             <div className="absolute inset-0 hover:bg-white/30 duration-1000"></div>
             <div className="absolute z-0 top-0 text-black drop-shadow-lg flex flex-col-reverse">
               {/* <div className="h-10"></div> */}
-              <p className="text-3xl group-hover:animate-fade-out-scale animate-fade-in-scale mb-2 text-3xl lg:text-2xl xl:text-3xl text-testgold">
+              <h1 className="text-3xl group-hover:animate-fade-out-scale animate-fade-in-scale mb-2 text-3xl lg:text-2xl xl:text-3xl text-testgold">
                 Takeaway
-              </p>
-              <p className="text-center underline group-hover:translate-y-10 duration-1800 group-hover:text-white group-hover:animate-fade-in-scale animate-fade-out-scale">
+              </h1>
+              <p className="text-center group-hover:translate-y-10 duration-1800 group-hover:text-white group-hover:animate-fade-in-scale animate-fade-out-scale">
                 View Menu
               </p>
             </div>
@@ -153,7 +156,7 @@ const imageUrls = [
                 e.stopPropagation();
               }}
             >
-              <img src="/images/DownloadIcon.png" className="w-full h-full"/>
+              <img src="/images/DownloadIcon.png" className="w-full h-full" alt="Menu download button"/>
             </a>
           </div>
         </div>

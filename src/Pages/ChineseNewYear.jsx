@@ -21,32 +21,43 @@ const ChineseNewYear = () => {
       <div className="text-black font-georgia min-h-121.5 flex text-center bg-cnyred text-testgold">
         <div className="xl:w-1/4 w-1/6 hidden lg:flex">
           <div className="aspect-square xl:w-1/2 w-full">
-            <img src="/images/CNYLanterns.png" className="full" />
+            <img
+              src="/images/CNYLanterns.png"
+              className="full"
+              alt="Chinese new year lanterns"
+            />
           </div>
           <div className="aspect-square w-1/2 hidden xl:inline">
-            <img src="/images/CNYLanterns2.png" className="w-full" />
+            <img
+              src="/images/CNYLanterns2.png"
+              className="w-full"
+              alt="Chinese new year lanterns mirrored"
+            />
           </div>
         </div>
         <div className="sm:py-5 xl:w-1/2 sm:w-4/5 mx-auto">
           <div className="sm:hidden">
-            <img src="/images/CNYMobile.png" />
+            <img
+              src="/images/CNYMobile.png"
+              alt="Chinese new year lanterns hanging from a tree"
+            />
           </div>
           <div className="px-5">
             <div className="flex">
               <div className="w-1/4 scale-x-[-1]">
-                <img src="/images/CNYHorse.png" className="w-full" />
+                <img src="/images/CNYHorse.png" className="w-full" alt="A golden horse rearing up on two legs for the year of the horse"/>
               </div>
               <div className="">
                 <div className="lg:text-5xl text-3xl flex items-center flex justify-center py-5">
                   <div className="w-1/4 scale-x-[-1]">
-                    <img src="/images/CNYHorse.png" className="w-full hidden" />
+                    <img src="/images/CNYHorse.png" className="w-full hidden" alt="A golden horse rearing up on two legs for the year of the horse"/>
                   </div>
                   <div className="">
                     <h1 className="font-alexbrush">Happy</h1>
                     <h1 className="font-alegreyasc">Chinese New Year</h1>
                   </div>
                   <div className="w-1/4">
-                    <img src="/images/CNYHorse.png" className="w-full hidden" />
+                    <img src="/images/CNYHorse.png" className="w-full hidden" alt="A golden horse rearing up on two legs for the year of the horse"/>
                   </div>
                 </div>
                 <h1 className="text-3xl">
@@ -63,7 +74,7 @@ const ChineseNewYear = () => {
                 <br />
               </div>
               <div className="w-1/4">
-                <img src="/images/CNYHorse.png" className="w-full" />
+                <img src="/images/CNYHorse.png" className="w-full" alt="A golden horse rearing up on two legs for the year of the horse"/>
               </div>
             </div>
             <div className="flex md:text-4xl justify-center gap-5 text-2xl">
@@ -81,10 +92,10 @@ const ChineseNewYear = () => {
               <h1>February</h1>
             </div>
             <p className="pb-5">
-              Celebrate the start of a new lunar year in spectacular style
-              at Springwater Cantonese! For one unforgettable week, our
-              restaurant comes alive with the colour, sound, and excitement of
-              traditional festivities.
+              Celebrate the start of a new lunar year in spectacular style at
+              Springwater Cantonese! For one unforgettable week, our restaurant
+              comes alive with the colour, sound, and excitement of traditional
+              festivities.
             </p>
             <p className="pb-5">
               Join us for an unforgettable week of celebrations, flavour, and
@@ -107,10 +118,18 @@ const ChineseNewYear = () => {
         </div>
         <div className="xl:w-1/4 w-1/6 hidden lg:flex">
           <div className="aspect-square w-1/2 hidden xl:inline">
-            <img src="/images/CNYLanterns.png" className="w-full" />
+            <img
+              src="/images/CNYLanterns.png"
+              className="w-full"
+              alt="Chinese new year lanterns"
+            />
           </div>
           <div className="aspect-square xl:w-1/2 w-full">
-            <img src="/images/CNYLanterns2.png" className="full" />
+            <img
+              src="/images/CNYLanterns2.png"
+              className="full"
+              alt="Chinese new year lanterns mirrored"
+            />
           </div>
         </div>
       </div>

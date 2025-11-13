@@ -21,20 +21,20 @@ function Homepage() {
   const location = useLocation();
   const navigate = useNavigate();
   function preloadImages(urls) {
-  for (let url of urls) {
-    const img = new Image();
-    img.src = url;
+    for (let url of urls) {
+      const img = new Image();
+      img.src = url;
+    }
   }
-}
-const imageUrls = [
-  "/images/TablePic.jpg",
+  const imageUrls = [
+    "/images/TablePic.jpg",
     "/images/MenuBlue.png",
     "/images/MenuRed.png",
     "/images/MenuGreen.png",
-];
-useEffect(() => {
-  checkImagesLoaded(images, setHiddenLoading);
-  preloadImages(imageUrls);
+  ];
+  useEffect(() => {
+    checkImagesLoaded(images, setHiddenLoading);
+    preloadImages(imageUrls);
     if (location.hash) {
       requestAnimationFrame(() => {
         const el = document.querySelector(location.hash);
@@ -86,12 +86,13 @@ useEffect(() => {
           id="about"
         >
           <div className="lg:w-1/2 py-10 lg:px-10 sm:px-20 px-10">
-          <EventSlider
-                images={[
-                  "/images/Fountain.png",
-                  "/images/Fountain2.png",
-                ]}
-              />
+            <EventSlider
+              images={["/images/Fountain.png", "/images/Fountain2.png"]}
+              imageNames={[
+                "Fountain located in the restaurant parking lot",
+                "Fountain located in the restaurant parking lot from another angle",
+              ]}
+            />
           </div>
           <div className="lg:w-1/2 flex flex-col justify-center">
             <div className="xl:w-2/3 text-center lg:mx-auto mx-10 font-georgia lg:w-4/5 md:w-2/3 md:mx-auto">
@@ -103,7 +104,7 @@ useEffect(() => {
                 food lovers.
               </p>
               <div>
-                <p className="text-lg font-bold mb-2">Opening Times:</p>
+                <h1 className="text-lg font-bold mb-2">Opening Times:</h1>
                 <div className="flex text-left w-fit mx-auto">
                   <div className="mr-5">
                     <p>Monday:</p>
@@ -169,7 +170,7 @@ useEffect(() => {
                 </span>{" "}
                 Celebrations <span className="hidden sm:inline">🎉</span>
               </h1>
-              <p className="text-lg underline">
+              <p className="text-lg">
                 Celebrate the season with us at Springwater Cantonese!
               </p>
               <div>
@@ -217,6 +218,11 @@ useEffect(() => {
                   "/images/XmasDeco2.png",
                   "/images/CNYHorseBG2.jpg",
                 ]}
+                imageNames={[
+                  "Restaurant interior decorated for christmas",
+                  "Restaurant interior decorated for christmas, with the dance floor partially in view",
+                  "Chinese new year banner featuring the year of the horse 2026",
+                ]}
               />
             </div>
           </div>
@@ -237,6 +243,15 @@ useEffect(() => {
                   "/images/testingsquare.png",
                   "/images/testingsquare2.png",
                 ]}
+                imageNames={[
+                  "Balloon arch used as event decoration",
+                  "Decorated event table with wine glasses",
+                  "Close-up of the decorated event table",
+                  "Wedding cake with red roses adorning it on the side",
+                  "A traditional red envelope for the celebration",
+                  "A decorated table for an 80th birthday celebration with balloons",
+                  "A decorated table for an 80th birthday celebration with balloons from another angle",
+                ]}
               />
             </div>
           </div>
@@ -246,7 +261,8 @@ useEffect(() => {
 
               <p className="text-lg">
                 Have a special celebration coming up? Whether it's a birthday,
-                anniversary, corporate dinner, or just a gathering with your favourite people, the restaurant offers the perfect setting for
+                anniversary, corporate dinner, or just a gathering with your
+                favourite people, the restaurant offers the perfect setting for
                 larger parties. With over 30 years experience, let us help you
                 plan that wonderful party or the perfect event!
               </p>
