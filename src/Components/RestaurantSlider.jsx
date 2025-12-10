@@ -4,7 +4,6 @@ import {Autoplay, Pagination } from "swiper/modules";
 const RestaurantSlider = () => {
   
   const images = [
-    // "/images/messages/XmasMessage.webp",
     "/images/EntranceFrontPage.webp",
     "/images/EntranceFrontPage2.webp",
     "/images/SignFrontPage.webp",
@@ -43,7 +42,7 @@ const RestaurantSlider = () => {
       >
         {images.map((image, index) => {
           return (
-            <SwiperSlide key={image}>
+            <SwiperSlide key={image} data-swiper-autoplay={index === 0 ? 7000 : 3500}>
               <img src={image} alt={imageNames[index]} fetchPriority={index===0?"high":"auto"} 
               className={`${index===2||index===9?`object-left`:`object-center`} h-100 md:h-200 w-full object-cover`}
               // className="h-100 md:h-200 w-full object-center object-cover"
