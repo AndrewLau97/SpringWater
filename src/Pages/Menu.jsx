@@ -6,10 +6,10 @@ function Menu() {
   const navigate = useNavigate();
   const [hiddenLoading, setHiddenLoading] = useState(true);
   const images = [
-    "/images/TablePic.jpg",
-    "/images/MenuBlue.png",
-    "/images/MenuRed.png",
-    "/images/MenuGreen.png",
+    "/images/MenuBG.webp",
+    "/images/MenuBlue.webp",
+    "/images/MenuRed.webp",
+    "/images/MenuGreen.webp",
   ];
   function preloadImages(urls) {
     for (let url of urls) {
@@ -59,7 +59,7 @@ function Menu() {
   } else {
     return (
       <>
-        <div className="min-h-220 font-georgia bg-[url('/images/TestMenuBG.jpg')] bg-cover bg-center flex justify-around items-center lg:flex-row flex-col lg:pt-0 pt-10 ">
+        <div className="min-h-220 font-georgia bg-[url('/images/MenuBG.webp')] bg-cover bg-center flex justify-around items-center lg:flex-row flex-col lg:pt-0 pt-10 ">
           <div
             className="lg:w-1/4 md:w-2/5 sm:w-1/2 w-4/5 aspect-square flex justify-center items-center group hover:cursor-pointer relative mb-10 lg:mb-0 "
             onClick={() => {
@@ -67,7 +67,7 @@ function Menu() {
             }}
           >
             <img
-              src="/images/MenuGreen.png"
+              src="/images/MenuGreen.webp"
               className="h-full w-full object-cover rounded-sm"
               alt="All you can eat menu"
             />
@@ -100,7 +100,7 @@ function Menu() {
             }}
           >
             <img
-              src="/images/MenuBlue.png"
+              src="/images/MenuBlue.webp"
               className="h-full w-full object-cover rounded-sm"
               alt="À La Carte menu"
             />
@@ -133,7 +133,7 @@ function Menu() {
             }}
           >
             <img
-              src="/images/MenuRed.png"
+              src="/images/MenuRed.webp"
               className="h-full w-full object-cover rounded-sm"
               alt="Takeaway menu"
             />

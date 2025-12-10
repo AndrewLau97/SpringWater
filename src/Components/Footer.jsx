@@ -29,7 +29,7 @@ function Footer() {
                 </div>
                 <div className="flex justify-center">
                   <div className="min-w-1/3 mx-left grid place-content-end mr-5">
-                    <h3 className="text-2xl">Opening Hours</h3>
+                    <h1 className="text-2xl">Opening Hours</h1>
                     <ul>
                       <li className="text-sm">Monday: 5pm - 10:30pm</li>
                       <li className="text-sm">Tuesday: Closed</li>
@@ -42,7 +42,7 @@ function Footer() {
                   </div>
                   <div className="border-1"></div>
                   <div className="min-w-1/3 mx-right grid place-content-start ml-5">
-                    <h3 className="text-2xl">Book a table</h3>
+                    <h1 className="text-2xl">Book a table</h1>
                     <p className="text-sm">Moor Lane, Calverton,</p>
                     <p className="text-sm">
                       Nottingham NG<span className="font-merriweather">14 6</span>FZ
